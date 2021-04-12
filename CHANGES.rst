@@ -2,8 +2,8 @@
  Change History for ZConfig
 ============================
 
-3.5.1 (unreleased)
-==================
+3.5.0.post0 (2021-04-12)
+========================
 
 - Handle `UnicodeDecodeError` on `logger/formatter` more gracefully.
   [gforcada]
