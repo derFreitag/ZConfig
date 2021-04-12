@@ -5,8 +5,8 @@
 3.5.1 (unreleased)
 ==================
 
-- Nothing changed yet.
-
+- Handle `UnicodeDecodeError` on `logger/formatter` more gracefully.
+  [gforcada]
 
 3.5.0 (2019-06-24)
 ==================
