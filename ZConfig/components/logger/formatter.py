@@ -327,6 +327,8 @@ class Py2Formatter(logging.Formatter):
             # Issue 25664. The logger name may be Unicode. Try again ...
             try:
                 record.name = record.name.decode('utf-8')
+                record.msg = record.msg.decode('utf-8')
+                record.message = record.message.decode('utf-8')
                 s = self._style.format(record)
             except UnicodeDecodeError:
                 raise e
