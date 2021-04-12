@@ -320,7 +320,8 @@ class Py2Formatter(logging.Formatter):
                 record.name = record.name.decode('utf-8')
                 s = self._style.format(record)
             except UnicodeDecodeError:
-                raise e
+                record.name = record.name.decode('unicode_escape').encode('ascii', 'ignore')
+                s = self._style.format(record)
         return s
 
     def format(self, record):
