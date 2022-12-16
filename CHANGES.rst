@@ -2,8 +2,8 @@
  Change History for ZConfig
 ============================
 
-3.6.1 (unreleased)
-==================
+3.6.0.post0 (2022-12-16)
+========================
 
 - Decode `msg` as well as `message` if a `UnicodeDecodeError` happens on `logger/formatter`.
   Trying to log an HTTP response (ZServer does it through AccessLogger) produces an exception
