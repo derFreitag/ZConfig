@@ -2,6 +2,12 @@
  Change History for ZConfig
 ============================
 
+3.6.0.post1 (unreleased)
+========================
+
+- Nothing changed yet.
+
+
 3.6.0.post0 (2022-12-16)
 ========================
 
