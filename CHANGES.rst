@@ -5,8 +5,10 @@
 3.6.1 (unreleased)
 ==================
 
-- Nothing yet.
-
+- Decode `msg` as well as `message` if a `UnicodeDecodeError` happens on `logger/formatter`.
+  Trying to log an HTTP response (ZServer does it through AccessLogger) produces an exception
+  if the URL contains Unicode characters.
+  [gforcada]
 
 3.6.0 (2021-05-19)
 ==================
